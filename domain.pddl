@@ -22,20 +22,38 @@
       (adjacent ?from ?to)                      ; destination its adjacent to "from"
     )
     :effect (and
-      (not (robot-at ?from))                    ; from has no robot
+      (NOT (robot-at ?from))                    ; from has no robot
       (robot-at ?to)                            ; robot at destination
     )
   )
 
   (:action pick-up
-      :parameters ()
-      :precondition (and )
-      :effect (and )
+      :parameters (?d - dish ?a - location)
+      :precondition (and 
+                    (robot-at ?a)
+                    (dish-at ?d ?a)
+                    (free-hands)
+                    )
+      :effect (and 
+              (carrying ?d)
+              (NOT (free-hands))
+              (NOT (dish-at ?d ?a))
+              )
   )
 
   (:action present-dish
-      :parameters ()
-      :precondition (and )
-      :effect (and )
-
+      :parameters (?d - dish ?a - location ?t - table)
+      :precondition (and 
+                    (robot-at ?a)
+                    (carrying ?d)
+                    (table-at ?t ?a)
+                    (order-at ?d ?t)
+                    (NOT (served ?t))
+                    )
+      :effect (and 
+              (served ?t)
+              (NOT (carrying ?d))
+              (free-hands)
+              )
+    )
 )
