@@ -1,0 +1,29 @@
+;;!domain: robotwaiter
+;;!problem: restaurant-delivery-simple
+
+0.00000: (move dr3 dr2)
+0.00100: (move dr2 dr1)
+0.00200: (move dr1 kitchen1)
+0.00300: (pick-up dish1 kitchen1)
+0.00400: (move kitchen1 dr1)
+0.00500: (move dr1 dr2)
+0.00600: (move dr2 dr7)
+0.00700: (move dr7 dr14)
+0.00800: (present-dish dish1 dr14 table1)
+0.00900: (move dr14 dr7)
+0.01000: (move dr7 dr8)
+0.01100: (move dr8 dr9)
+0.01200: (move dr9 kitchen2)
+0.01300: (pick-up dish2 kitchen2)
+0.01400: (move kitchen2 dr3)
+0.01500: (move dr3 dr2)
+0.01600: (move dr2 dr7)
+0.01700: (move dr7 dr14)
+0.01800: (present-dish dish2 dr14 table1)
+0.01900: (move dr14 dr7)
+0.02000: (move dr7 dr6)
+0.02100: (move dr6 dr5)
+0.02200: (move dr5 kitchen1)
+
+; Makespan: 0.022000000000000013
+; Metric: 0.022000000000000013
