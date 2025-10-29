@@ -11,7 +11,7 @@
     (free-hands)                                       ; robot's hands are free
     (table-at ?t - table ?a - location)                ; table ?t is at location ?a
     (order-at ?d - dish ?t - table)                    ; dish ?d is ordered at table ?t
-    (served ?t - table)                                ; table ?t has been served
+    (served ?d - dish ?t - table)                                ; table ?t has been served
     )
 
   ; MOVE: robot walks from one area to an adjacent area.
@@ -48,10 +48,10 @@
                     (carrying ?d)
                     (table-at ?t ?a)
                     (order-at ?d ?t)
-                    (NOT (served ?t))
+                    (NOT (served ?d ?t))
                     )
       :effect (and 
-              (served ?t)
+              (served ?d ?t)
               (NOT (carrying ?d))
               (free-hands)
               )

@@ -6,7 +6,7 @@
     kitchen hall dr1 dr2 dr3 dr4 dr5 - location
     
     ; Dishes
-    dish1 - dish
+    macarrones - dish
     
     ; Tables
     table1 - table
@@ -37,16 +37,16 @@
     
     ; Initial state
     (robot-at kitchen)
-    (dish-at dish1 kitchen)
+    (dish-at macarrones kitchen)
     (table-at table1 dr4)
     (free-hands)
     
     ; Order
-    (order-at dish1 table1)
+    (order-at macarrones table1)
   )
   
   (:goal (and
-    (served table1)
+    (served macarrones table1)
     (robot-at kitchen)
     )
   )

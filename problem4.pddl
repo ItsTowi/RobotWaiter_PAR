@@ -57,7 +57,7 @@
   )
   
   (:goal (and
-    (served table1)
+    (served dish1 table1)
     (robot-at kitchen)
   ))
 )
