@@ -1,0 +1,14 @@
+;;!domain: robotwaiter
+;;!problem: restaurant-delivery-simple
+
+0.00000: (pick-up macarrones kitchen)
+0.00100: (move kitchen dr1)
+0.00200: (move dr1 dr3)
+0.00300: (move dr3 dr4)
+0.00400: (present-dish macarrones dr4 table1)
+0.00500: (move dr4 dr3)
+0.00600: (move dr3 dr1)
+0.00700: (move dr1 kitchen)
+
+; Makespan: 0.007
+; Metric: 0.007
