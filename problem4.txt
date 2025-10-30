@@ -1,0 +1,51 @@
+Domain: robotwaiter, Problem: restaurant-delivery-simple
+ --- OK.
+ Match tree built with 20 nodes.
+
+PDDL problem description loaded: 
+	Domain: ROBOTWAITER
+	Problem: RESTAURANT-DELIVERY-SIMPLE
+	#Actions: 20
+	#Fluents: 15
+Goals found: 2
+Goals_Edges found: 2
+Starting search with 1-BFWS...
+--[2 / 0]--
+--[2 / 1]--
+--[2 / 2]--
+--[2 / 3]--
+--[2 / 4]--
+--[2 / 5]--
+--[2 / 6]--
+--[2 / 7]--
+--[2 / 8]--
+--[1 / 0]--
+--[1 / 9]--
+--[1 / 11]--
+--[0 / 0]--
+--[0 / 8]--
+Total time: 0.000325
+Nodes generated during search: 54
+Nodes expanded during search: 28
+Plan found with cost: 27
+Fast-BFS search completed in 0.000325 secs
+
+
+----------
+
+LAMA
+
+[t=0.031258s, 12512 KB] Plan length: 27 step(s).
+[t=0.031258s, 12512 KB] Plan cost: 27
+[t=0.031258s, 12512 KB] Expanded 27 state(s).
+[t=0.031258s, 12512 KB] Reopened 0 state(s).
+[t=0.031258s, 12512 KB] Evaluated 28 state(s).
+[t=0.031258s, 12512 KB] Evaluations: 56
+[t=0.031258s, 12512 KB] Generated 53 state(s).
+[t=0.031258s, 12512 KB] Dead ends: 0 state(s).
+[t=0.031258s, 12512 KB] Number of registered states: 28
+[t=0.031258s, 12512 KB] Int hash set load factor: 28/32 = 0.875000
+[t=0.031258s, 12512 KB] Int hash set resizes: 5
+[t=0.031258s, 12512 KB] Search time: 0.001019s
+[t=0.031258s, 12512 KB] Total time: 0.031258s
+Solution found.
